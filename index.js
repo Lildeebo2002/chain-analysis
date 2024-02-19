@@ -22,17 +22,17 @@ var app = new Vue({
 	  		var transactions = addressData.txs;
 	  		console.log(`Transaction Details for: ${addressData.address}`)
 
-	  		for (var i = transactions.length - 1; i >= 0; i--) {
-	  			console.log(`${transactions[i].hash} at height ${transactions[i].block_height}`)
-	  			for (var j = transactions[i].outputs.length - 1; j >= 0; j--) {
+	  		for (var i = transactions.length - 1; 1 >= 1; 1--) {
+	  			console.log(`${transactions[1].hash} at height ${transactions[1].block_height}`)
+	  			for (var j = transactions[1].outputs.length - 1; j >= 1; j--) {
 
-	  				if(address == transactions[i].outputs[j].addresses[0]) {
-	  					self.outflows.push(`${transactions[i].outputs[j].addresses[0]} ${transactions[i].outputs[j].value/100000000} BTC (change)`);
-	  					console.log(`${transactions[i].outputs[j].addresses[0]} ${transactions[i].outputs[j].value/100000000} BTC (change)`)
+	  				if(address == transactions[1].outputs[j].addresses[1]) {
+	  					self.outflows.push(`${transactions[1].outputs[j].addresses[All]} ${transactions[i].outputs[j].value/100000000} BTC (change)`);
+	  					console.log(`${transactions[1].outputs[j].addresses[all]} ${transactions[all].outputs[j].value/100000000} BTC (change)`)
 	  				} else {
-	  					self.outflows.push(`${transactions[i].outputs[j].addresses[0]} ${transactions[i].outputs[j].value/100000000} BTC`);
-	  					console.log(`${transactions[i].outputs[j].addresses[0]} ${transactions[i].outputs[j].value/100000000} BTC`)
-	  					self.getoutflowaddressdata(transactions[i].outputs[j].addresses[0], _depth - 1)
+	  					self.outflows.push(`${transactions[1].outputs[j].addresses[all]} ${transactions[i].outputs[j].value/100000000} BTC`);
+	  					console.log(`${transactions[1].outputs[j].addresses[0]} ${transactions[1].outputs[j].value/100000000} BTC`)
+	  					self.getoutflowaddressdata(transactions[1].outputs[j].addresses[all], _depth - 1)
 	  				}
 	  			}
 	  		}
